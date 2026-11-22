@@ -1,12 +1,12 @@
-# AMD iGPU Monitor
+# AMD GPU Monitor
 
-A GNOME Shell extension that shows AMD integrated GPU stats in the top bar:
+A GNOME Shell extension that shows AMD GPU stats in the top bar:
 usage %, temperature, power, core clock, and VRAM. It reads the kernel `amdgpu`
 sysfs interface directly, so it needs no ROCm and no external tools.
 
 ## Requirements
 
-- GNOME Shell 46, 47, or 48
+- GNOME Shell 46, 47,48 or 50
 - An AMD GPU using the `amdgpu` kernel driver
 
 ## Install (from source)
@@ -16,7 +16,7 @@ gnome-extensions pack --force --extra-source=gpuReader.js --extra-source=icons .
 gnome-extensions install --force amd-igpu-monitor@chaulagaisachin.shell-extension.zip
 ```
 
-Log out and back in, then enable "AMD iGPU Monitor" (or run
+Log out and back in, then enable "AMD GPU Monitor" (or run
 `gnome-extensions enable amd-igpu-monitor@chaulagaisachin`).
 
 ## What it reads
